@@ -1,61 +1,38 @@
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { AppLayout } from "./Component/Layout/AppLayout";
-import { CountryDetails } from "./Component/Layout/CountryDetails";
-
-//  import Page
-
-import { Home } from "./Pages/Home"
-import { About } from "./Pages/About"
-import { Country } from "./Pages/Country"
-import { Contact } from "./Pages/Contact"
-import { ErrorPage } from "./Pages/ErrorPage";
+import React from "react";
+import Navbar from "./my-components/Navbar";
+import Header1 from "./my-components/Header1";
+import Counter from "./my-components/Counter";
+import Profilecard from "./my-components/Profilecard";
+import SkillsSection from "./my-components/SkillsSection";
+import OurProject from "./my-components/OurProject";
+import TestimonialSider from "./my-components/TestimonialSider";
+import Contact from "./my-components/Contact";
+import Footer from "./my-components/Footer";
 
 import "./App.css"
 
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <AppLayout />,
-        errorElement: <ErrorPage />,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-
-            {
-                path: "about",
-                element: <About />,
-            },
-
-            {
-                path: "country",
-                element: <Country />,
-            },
-
-            {
-                path: "country/:id",
-                element: <CountryDetails />,
-            },
-            
-            {
-                path: "contact",
-
-                element: <Contact />,
-            },
-        ]
-    }
-
-]);
 
 
 
-export const App = () => {
+function App() {
 
-    return <RouterProvider router={router}></RouterProvider>
+    return(
+        <div className="App">
+            <Navbar />
+            <Header1 />
+            <Counter />
+            <Profilecard />
+            <SkillsSection />
+            <OurProject />
+            <TestimonialSider />
+            <Contact />
+            <Footer />  
+        </div>
+    );
+};
 
-}
 
 export default App;
+
 
