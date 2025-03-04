@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/world_React/static/css/main.79edbb26.css",
+    "main.js": "/world_React/static/js/main.557e5109.js",
+    "static/media/world.jpg": "/world_React/static/media/world.0947499bf538893c4531.jpg",
+    "index.html": "/world_React/index.html",
+    "main.79edbb26.css.map": "/world_React/static/css/main.79edbb26.css.map",
+    "main.557e5109.js.map": "/world_React/static/js/main.557e5109.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79edbb26.css",
+    "static/js/main.557e5109.js"
+  ]
+}
